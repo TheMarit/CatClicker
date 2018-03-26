@@ -6,12 +6,25 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<ul id="catList">
-
-	</ul>
-	<div id="container">
-
+	<ul id="cat-list"></ul>
+	<div id="cat">
+		<h2 id="cat-name"></h2>
+		<div id="cat-count"></div>
+		<img src="" alt="" id="cat-img">
 	</div>
-<script src="catclicker.js"></script>
+	<button id="admin">Admin</button>
+	<div id="adminmode">
+		<form id="form" action="javascript:void(0);" >
+			<label for="cat-name">Name: </label>
+			<input type="text" name="cat-name" id="catName">
+			<label for="imgurl">ImgURL: </label>
+			<input type="text" name="imgurl" id="imgUrl">
+			<label for="clicks"># clicks: </label>
+			<input type="number" name="clicks" id="clicks">
+			<button id="cancel">Cancel</button>
+			<button id="save">Save</button>
+		</form>
+	</div>
+	<script src="catclicker.js"></script>
 </body>
 </html>
